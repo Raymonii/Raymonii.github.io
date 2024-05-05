@@ -1,3 +1,29 @@
+/* Animations */
+
+@keyframes heading-colors {
+    0% {
+        color: aquamarine ;
+    }
+
+    25% {
+        color:chartreuse
+    }
+
+    50% {
+        color: cadetblue;
+    }
+
+    75% {
+        color: darkblue;
+    }
+
+    100% {
+        color: darkorchid;
+    }
+
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -29,17 +55,22 @@ img {
 }
 
 main {
+    margin-left: 300px;
+}
+
+main {
     background-color: rgb(67, 178, 247);
 }
 
 nav a {
     color: aqua;
 }
+
 ol li {
     background-color: blueviolet;
 }
 
-nav {
+p:hover nav {
     border-bottom: 1px solid black;
     padding: 10px;
     position: fixed;
@@ -52,4 +83,6 @@ nav {
         margin: 0;
         padding: 0;
     }
+
+    C
 }
