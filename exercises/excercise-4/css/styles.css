@@ -1,0 +1,143 @@
+/* Variables */
+:root {
+    --bg-color: rgb(243, 240, 157);
+    --primary-color: rgb(137, 241, 225);
+    --secondary-color: rgb(197, 136, 238);
+    --text-color: rgb(234, 81, 145);
+}
+
+
+
+/* Animations */
+
+@keyframes heading-colors {
+    0% {
+        color: aquamarine;
+    }
+
+    25% {
+        color: chartreuse
+    }
+
+    50% {
+        color: cadetblue;
+    }
+
+    75% {
+        color: darkblue;
+    }
+
+    100% {
+        color: darkorchid;
+    }
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: blue;
+}
+
+.intro {
+    color: rgb(rgb(229, 226, 20));
+    width: 50%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    padding: 20px;
+    border: 2px solid red;
+    box-sizing: border-box;
+
+}
+
+main {}
+
+main {
+    background-color: rgb(67, 178, 247);
+    order: 1;
+}
+
+nav a {
+    color: aqua;
+}
+
+ol li {
+    background-color: blueviolet;
+}
+
+.navigation {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .navigation {
+        display: block;
+        order: 2;
+    }
+
+    main {
+        order: 1;
+    }
+}
+
+
+
+p:hover nav {
+    border-bottom: 1px solid black;
+    padding: 10px;
+    width: 300px;
+
+    ol {
+        list-style: ;
+        margin: 0;
+        padding: 0;
+    }
+
+    C
+}
+
+nav a:hover {
+    color: ;
+}
+
+h1 {
+    font-family: "Jersey 25 Charted", sans-serif;
+}
+
+.jersey-25-charted-regular {
+    font-family: "Jersey 25 Charted", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .navigation {
+        flex-basis: 300px;
+        order: 1;
+        position: sticky;
+        top: 1rem;
+        align-self: flex-start;
+    }
+
+    main {
+        order: 2;
+        flex-basis: calc(100% - 400px)
+    }
+}
